@@ -1,12 +1,15 @@
 package Ejemplos;
 
 public class EjercicioPrecio {
-	public double calcularPrecio(int unidades, double precioUnitario) {
+	public double calcularPrecioIVA(int unidades, double precioUnitario) {
 		double precioTotal;
+		double precioConIVA;
 		
 		precioTotal = precioUnitario * unidades;
 		
-		return precioTotal;
+		precioConIVA = precioTotal + (precioTotal*0.21);
+		
+		return precioConIVA;
 		
 	}
 
